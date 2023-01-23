@@ -54,16 +54,16 @@
 .sidebar .top-nav .simple-icon {
   width: 30px;
 }
-.sidebar .bottom-nav .setting-list li {
+.sidebar .setting-list li {
   display: flex;
   align-items: center;
   gap: 30px;
   padding-top: 10px;
 }
-.sidebar .bottom-nav .setting-list li:hover {
+.sidebar .setting-list li:hover {
   transform: translate(0, -5px);
 }
-.sidebar .bottom-nav .simple-icon {
+.sidebar .simple-icon {
   width: 30px;
 }
 
@@ -71,7 +71,7 @@
   grid-column: 2/3;
   box-shadow: 0px 15px 10px -15px;
   transition: all 0.2s ease-out;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   position: relative;
 }
 .header .top-header {
@@ -79,7 +79,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .header .top-header .search-container {
   display: grid;
@@ -129,7 +129,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .header .bottom-header .profile-tab {
   display: grid;
@@ -191,7 +191,8 @@
 }
 .main .project-display .project-card .project {
   background-color: #ffffff;
-  border: 1.5px solid #0f172a;
+  box-shadow: -8px 0px 10px;
+  border-radius: 10px;
 }
 .main .project-display .project-card .project .project-content {
   padding: 1rem;
@@ -213,10 +214,36 @@
   width: 25px;
 }
 .main .announcements {
-  border: 1.5px solid #0f172a;
   grid-column: 2/-1;
 }
-.main .trending-profiles {
-  border: 1.5px solid #0f172a;
+.main .announcements-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.main .announcements-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.main .announcements-card .announcement-title {
+  font-weight: 700;
+}
+.main .announcements-card hr {
+  margin: 10px 0;
+}
+.main .trending-section {
   grid-column: 2/-1;
+}
+.main .trending-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.main .trending-card .trending-profile {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  padding: 0.5rem;
+}
+.main .trending-card .trending-profile .trending-img {
+  width: 50px;
 }
