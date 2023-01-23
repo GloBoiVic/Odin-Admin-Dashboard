@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 
-$primary-text-color: #0f172a;
-$secondary-text-color: #fafafa;
+$primary-text-color: #000000;
+$secondary-text-color: #ffffff;
 $accent-color: #6d28da;
+$main-bg-color: #e6e6e6;
+$secondary-bg-color: #ffffff;
 
 * {
   margin: 0;
@@ -27,9 +29,10 @@ $accent-color: #6d28da;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr;
-  grid-gap: 40px;
+  gap: 40px;
   padding: 1.5rem;
   font-size: 1.1rem;
+  transition: all 0.2s ease-out;
 
   .sidebar-heading {
     grid-row: 1 / 2;
@@ -37,6 +40,10 @@ $accent-color: #6d28da;
     align-items: center;
     gap: 20px;
     font-size: 1.5rem;
+
+    &:hover {
+      transform: translate(0, -5px);
+    }
 
     .dash-image {
       width: 45px;
@@ -52,6 +59,10 @@ $accent-color: #6d28da;
         align-items: center;
         gap: 30px;
         padding-top: 10px;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
       }
     }
     .simple-icon {
@@ -66,6 +77,10 @@ $accent-color: #6d28da;
         align-items: center;
         gap: 30px;
         padding-top: 10px;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
       }
     }
     .simple-icon {
@@ -75,49 +90,196 @@ $accent-color: #6d28da;
 }
 // sidebar end
 
+// header start
 .header {
   grid-column: 2 / 3;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
+  box-shadow: 0px 15px 10px -15px;
+  transition: all 0.2s ease-out;
+  padding: 0 1rem;
+  position: relative;
 
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem;
+
+    .search-container {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      align-items: center;
+
+      .search-icon {
+        width: 25px;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+
+      input {
+        background-color: $main-bg-color;
+        width: 600px;
+        padding: 5px;
+        border-radius: 30px;
+        border: none;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+    }
+
+    .profile-bar {
+      display: grid;
+      grid-template-columns: repeat(2, 70px) 1fr;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+
+      .noti-icon {
+        width: 35px;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+
+      .profile-img-small {
+        width: 45px;
+        height: 45px;
+        vertical-align: middle;
+        border-radius: 50%;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+    }
+  }
+
+  .bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem;
+
+    .profile-tab {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      align-items: center;
+      font-weight: 700;
+      transition: all 0.2s ease-out;
+
+      .profile-img-large {
+        vertical-align: middle;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+
+      .profile-greeting {
+        .name {
+          font-size: 1.6rem;
+        }
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+    }
+
+    .profile-post {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+
+      .profile-button {
+        background-color: $accent-color;
+        color: $secondary-text-color;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 20px;
+
+        &:hover {
+          transform: translate(0, -5px);
+        }
+      }
+    }
+  }
+
+  //Todo: Make responsive grid with max with
+}
+// header end
+
+// main start
 .main {
-  border: 1.5px solid #0f172a;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: minmax(1fr, auto);
+  // grid-template-rows: minmax(1fr, auto);
   gap: 30px;
-}
+  padding: 1rem;
+  background-color: $main-bg-color;
 
-.project-display {
-  border: 1.5px solid #0f172a;
-  grid-row: 1 / 3;
+  .project-display {
+    grid-row: 1 / 3;
 
-  .project-card {
-    border: 1.5px solid #0f172a;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    .project-heading {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      grid-template-rows: repeat(2, 1fr);
+      gap: 30px;
+
+      .project {
+        background-color: $secondary-bg-color;
+        border: 1.5px solid #0f172a;
+        // display: grid;
+        // grid-template-columns: 1fr;
+
+        .project-content {
+          padding: 1rem;
+
+          .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+          }
+
+          .project-description {
+            font-size: 0.9rem;
+          }
+        }
+
+        .project-icons {
+          display: flex;
+          .interactions {
+            list-style-type: none;
+            .interact-icons {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
   }
 
-  .project {
+  .announcements {
     border: 1.5px solid #0f172a;
+    grid-column: 2 / -1;
   }
-}
 
-.profile-img-small {
-  vertical-align: middle;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-.announcements {
-  border: 1.5px solid #0f172a;
-  grid-column: 2 / -1;
-}
-
-.trending-profiles {
-  border: 1.5px solid #0f172a;
-  grid-column: 2 / -1;
+  .trending-profiles {
+    border: 1.5px solid #0f172a;
+    grid-column: 2 / -1;
+  }
 }
