@@ -16,9 +16,10 @@ $secondary-bg-color: #ffffff;
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 0.8fr 4fr;
   grid-template-rows: 1fr 4fr;
   color: $primary-text-color;
+  overflow: hidden;
 }
 
 // sidebar start
@@ -31,7 +32,7 @@ $secondary-bg-color: #ffffff;
   grid-template-rows: auto auto 1fr;
   gap: 40px;
   padding: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   transition: all 0.2s ease-out;
 }
 .sidebar-heading {
@@ -39,7 +40,7 @@ $secondary-bg-color: #ffffff;
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   &:hover {
     transform: translate(0, -5px);
@@ -126,7 +127,7 @@ $secondary-bg-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(2, 70px) 1fr;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -155,6 +156,7 @@ $secondary-bg-color: #ffffff;
   align-items: center;
   gap: 50px;
   padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .profile-tab {
@@ -177,7 +179,7 @@ $secondary-bg-color: #ffffff;
 
   .profile-greeting {
     .name {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
     }
 
     &:hover {
@@ -203,7 +205,6 @@ $secondary-bg-color: #ffffff;
     }
   }
 }
-//Todo: Make responsive grid with max with
 
 // header end
 
@@ -221,6 +222,7 @@ $secondary-bg-color: #ffffff;
 
 .project-display {
   grid-row: 1 / 3;
+  margin-left: 1rem;
 
   .project-heading {
     font-size: 1.5rem;
@@ -230,7 +232,7 @@ $secondary-bg-color: #ffffff;
 
 .project-card {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, minmax(150px, 0.5fr));
   grid-template-rows: repeat(3, 250px);
   gap: 30px;
 }
@@ -242,6 +244,7 @@ $secondary-bg-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-left: 10px solid $accent-color;
 
   .project-content {
     padding: 1rem;
@@ -299,16 +302,29 @@ $secondary-bg-color: #ffffff;
   background-color: $secondary-bg-color;
   border-radius: 10px;
   padding: 1.5rem;
+}
 
-  .trending-profile {
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    align-items: center;
-    padding: 0.5rem;
+.trending-profile {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  padding: 0.5rem;
 
-    .trending-img {
-      width: 50px;
-    }
+  .trending-img {
+    width: 50px;
+  }
+
+  .trending-img_crop {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.trending-profile-info {
+  .trending-username {
+    font-weight: 700;
   }
 }
 
