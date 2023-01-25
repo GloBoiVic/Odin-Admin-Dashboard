@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://globoivic.github.io/Etch-A-Sketch/">
+    <a href="https://globoivic.github.io/Odin-Admin-Dashboard/">
       Demo
     </a>
     <span> | </span>
