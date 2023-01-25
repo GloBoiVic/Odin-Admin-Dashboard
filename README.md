@@ -52,7 +52,8 @@ Built with CSS Grid and Flexbox mixed in
 To improve this project, I would like to:
 
 - Add my project screenshots to the page
-- Make dashboard fully responsive by adding media queries.
+- Make dashboard fully responsive by adding media queries
+- Figure out measurement units to remove vertical scrollbar
 
 ## :bust_in_silhouette: Contact
 
