@@ -9,12 +9,13 @@
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.8fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-columns: 0.5fr 3fr;
   color: #000000;
   overflow: hidden;
 }
 
+/* sidebar start */
 .sidebar {
   background-color: #6d28da;
   color: #ffffff;
@@ -69,6 +70,8 @@
   width: 30px;
 }
 
+/* sidebar end */
+/* header start */
 .header {
   grid-column: 2/3;
   box-shadow: 0px 15px 10px -15px;
@@ -177,6 +180,8 @@
   transform: translate(0, -5px);
 }
 
+/* header end */
+/* main start */
 .main {
   display: grid;
   grid-template-columns: 2fr 300px;
@@ -283,3 +288,5 @@
 .trending-profile-info .trending-username {
   font-weight: 700;
 }
+
+/* main end */
