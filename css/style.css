@@ -8,8 +8,7 @@
 
 .container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 0.5fr 3fr;
+  max-height: 100vh;
   grid-template-columns: 0.5fr 3fr;
   color: #000000;
   overflow: hidden;
@@ -196,7 +195,7 @@
   margin-left: 1rem;
 }
 .project-display .project-heading {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
@@ -220,11 +219,11 @@
   padding: 1rem;
 }
 .project .project-content .project-title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 .project .project-content .project-description {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .project-icons .interactions {
@@ -243,7 +242,7 @@
 }
 
 .announcements-heading {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 

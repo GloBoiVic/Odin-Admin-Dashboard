@@ -15,8 +15,7 @@ $secondary-bg-color: #ffffff;
 
 .container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 0.5fr 3fr;
+  max-height: 100vh;
   grid-template-columns: 0.5fr 3fr;
   color: $primary-text-color;
   overflow: hidden;
@@ -223,7 +222,7 @@ $secondary-bg-color: #ffffff;
   margin-left: 1rem;
 
   .project-heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -248,12 +247,12 @@ $secondary-bg-color: #ffffff;
     padding: 1rem;
 
     .project-title {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 700;
     }
 
     .project-description {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
   }
 }
@@ -275,7 +274,7 @@ $secondary-bg-color: #ffffff;
 }
 
 .announcements-heading {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
