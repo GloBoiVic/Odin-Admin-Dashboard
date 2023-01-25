@@ -1,7 +1,7 @@
 <h1 align="center">Odin Admin Dashboard</h1>
 
 <div align="center">
-   A Project from <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard" target="_blank">The Odin Project</a>.
+   A Project from <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>.
 </div>
 
 <div align="center">
@@ -10,11 +10,11 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/GloBoiVic/Odin-Signup-Page">
+    <a href="https://github.com/GloBoiVic/Odin-Admin-Dashboard">
       Github Repo
     </a>
     <span> | </span>
-    <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">
+    <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard">
       Project Description
     </a>
   </h3>
@@ -31,29 +31,28 @@
 
 ## :page_facing_up: General Information
 
-Project Sign Up Page in the Odin Intermediate HTML and CSS course
+Project Admin Dashboard in the Odin Intermediate HTML and CSS course
 
 ## :computer: Technologies Used
 
 - HTML
 - CSS
+- SCSS
 
 ## :fire: Features
 
-Semi-Responsive Sign Up page
+Built with CSS Grid and Flexbox mixed in
 
 ## :camera: Screenshots
 
-![screenshot](assets/Odin-Sign-Up-Screenshot.png)
+![screenshot](assets/images/Dashboard-screenshot.png)
 
 ## :heavy_exclamation_mark: Room for Improvement
 
 To improve this project, I would like to:
 
-- Add form validation
-  - Currently, the form does not validate because the create account button is not inside the form attribute
-  - I plan to come back and fix that but as of right now, I am moving on to the next section of the Odin Project
-- Make form fully responsive
+- Add my project screenshots to the page
+- Make dashboard fully responsive by adding media queries.
 
 ## :bust_in_silhouette: Contact
 
